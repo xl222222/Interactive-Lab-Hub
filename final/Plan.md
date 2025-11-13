@@ -11,8 +11,12 @@ Date: November 11, 2025
 
 <h2 style="margin-top: 20px;">1. Big Idea</h2>
 <p style="line-height: 1.6;"> <strong>FridgeMind</strong> is an AI-powered fridge assistant that helps people track food, reduce waste, and make smarter meal decisions. Mounted on the refrigerator door, the device uses a <strong>camera</strong> for food recognition, a <strong>touchscreen</strong> for quantity confirmation and browsing inventory, a <strong>microphone</strong> for voice-based meal queries, and an <strong>RGB LED strip</strong> for ambient system feedback. <br><br> All recognition and inventory management run <strong>locally on Raspberry Pi</strong>, while an external AI API provides meal suggestions based on real-time inventory. </p> <hr>
+
+<img width="2048" height="1152" alt="6fd32781-0c27-4ede-9918-ad07daec5b2f" src="https://github.com/user-attachments/assets/89041a34-9290-423d-833c-80cc763e3bad" />
+
 <h2 style="margin-top: 20px;">2. Interaction Summary</h2>
 <h3>2.1 Visual Input for Food Recognition</h3>
+![Uploading 6fd32781-0c27-4ede-9918-ad07daec5b2f.png…]()
 
 Users place food items in front of the device.
 The camera automatically identifies the food category using a lightweight ONNX model.
@@ -86,7 +90,9 @@ Wires, connectors, power supply
 
 <hr>
 <h2 style="margin-top: 20px;">5. Timeline</h2>
+
 🗓 Week 1 — System Architecture & Design Concept (Nov 10–17)
+<img width="2048" height="1152" alt="db91fef8-bc7e-4d20-b208-17cdca50d716" src="https://github.com/user-attachments/assets/c9af04fa-44cd-4296-a97e-cfefa48999c6" />
 
 Goal: Define overall structure + interaction
 
