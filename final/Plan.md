@@ -1,7 +1,7 @@
 FridgeMind – Final Project Plan
 <div align="left">
 
-Team Members: Xiaocheng Li(XL2222); Haotian Xu(hx332); Xiang Chang
+Team Members: Xiaocheng Li(XL2222); Haotian Xu(hx332); Xiang Chang (xc529)
 
 Course: Interactive Device Design
 
