@@ -2,7 +2,9 @@ FridgeMind – Final Project Plan
 <div align="left">
 
 Team Members: Xiaocheng Li(XL2222); Haotian Xu(hx332); Xiang Chang
+
 Course: Interactive Device Design
+
 Date: November 11, 2025
 
 </div> <hr>
