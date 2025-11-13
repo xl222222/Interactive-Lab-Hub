@@ -1,74 +1,36 @@
-1. Big Idea
+<h2 style="margin-top: 20px;">1. Big Idea</h2>
+<p style="line-height: 1.6;"> <strong>FridgeMind</strong> is an AI-powered fridge assistant that helps people track food, reduce waste, and make smarter meal decisions. Mounted on the refrigerator door, the device uses a <strong>camera</strong> for food recognition, a <strong>touchscreen</strong> for quantity confirmation and browsing inventory, a <strong>microphone</strong> for voice-based meal queries, and an <strong>RGB LED strip</strong> for ambient system feedback. <br><br> All recognition and inventory management run <strong>locally on Raspberry Pi</strong>, while an external AI API provides meal suggestions based on real-time inventory. </p> <hr>
+<h2 style="margin-top: 20px;">2. Interaction Summary</h2>
+<h3>2.1 Visual Input for Food Recognition</h3>
 
-FridgeMind is an AI-powered fridge assistant that helps people
+Users place food items in front of the device.
+The camera automatically identifies the food category using a lightweight ONNX model.
 
-track food,
+<h3>2.2 Touchscreen Confirmation</h3>
 
-reduce waste,
+The touchscreen shows the detected item and allows users to confirm or adjust the quantity.
+Food logging is based on image input, not voice.
 
-and make smarter meal decisions.
+<h3>2.3 Voice for Meal Guidance Only</h3>
 
-Mounted on the refrigerator door, the device uses:
-
-a camera for automatic food recognition,
-
-a touchscreen for quantity confirmation and inventory browsing,
-
-a microphone for meal-related voice queries, and
-
-an RGB LED strip for system feedback.
-
-All image recognition and inventory management run locally on the Raspberry Pi.
-A remote AI API is used only for generating meal suggestions.
-
-2. Interaction Summary
-
-FridgeMind centers around a simple and intuitive flow designed for everyday kitchens.
-
-2.1 Visual Input for Food Recognition
-
-Users place food items (e.g., eggs, vegetables, fruits, packaged goods) in front of the device.
-The camera automatically identifies the food type using a lightweight ONNX vision model.
-
-2.2 Touchscreen Confirmation
-
-After recognition, the screen displays:
-
-detected food category
-
-editable quantity
-
-auto-generated “time in fridge”
-
-Food logging relies on image input, not voice.
-
-2.3 Voice for High-Level Meal Guidance Only
-
-Users can ask:
+Users can ask things like:
 
 “What can I cook today?”
 
-“Show me recipes using chicken.”
+“Show me recipes using eggs.”
 
 “Which foods are expiring soon?”
 
-“What ingredients should I use first?”
+“What should I use first?”
 
-Voice is used only for queries and suggestions, not data entry.
+Voice interaction is used only for meal queries, not for adding/removing items.
 
-2.4 AI-Generated Recipes
+<h3>2.4 AI-Generated Recipes</h3>
 
-Using the live inventory stored locally, FridgeMind queries an AI API to generate:
+The system sends inventory to an AI API to generate simple recipes,
+helping users cook efficiently and reduce waste.
 
-meal ideas,
-
-ingredient usage suggestions,
-
-simple shopping add-ons.
-
-2.5 LED Feedback System
-
-LED colors communicate status:
+<h3>2.5 LED Feedback</h3>
 
 🔵 Scanning
 
@@ -78,179 +40,147 @@ LED colors communicate status:
 
 🔴 Recognition error
 
-3. Design Concept
+<hr>
+<h2 style="margin-top: 20px;">3. Design Concept</h2>
+<div style="line-height: 1.6;"> The device is designed as a compact, friendly module that blends into kitchen environments: </div>
 
-The device is designed as a minimal, friendly module for kitchen environments:
+Soft, rounded 3D-printed enclosure
 
-Compact vertical layout
+Vertical layout: camera → screen → LED
 
-Smooth, rounded enclosure
+Magnetic mounting
 
-Magnetic mounting for fridge doors
+Three-screen UI: Capture / Inventory / Recipes
 
-Bright touchscreen UI with three pages:
+LED strip for ambient feedback
 
-Capture
+One-hand, quick interaction workflow
 
-Inventory
+<hr>
+<h2 style="margin-top: 20px;">4. Parts Needed (Beyond Class Kit)</h2>
 
-Recipes
-
-LED strip integrated for ambient feedback
-
-Designed for one-hand, quick interactions
-
-4. Parts Needed (Beyond Class Kit)
-
-Raspberry Pi 4 or 5
+Raspberry Pi 4 / 5
 
 Pi Camera Module v3
 
-6.9–7 inch touchscreen display
+6.9–7 inch touchscreen
 
 USB microphone
 
-RGB LED strip (WS2812B or equivalent)
+RGB LED strip (WS2812B)
 
 3D-printed enclosure + magnets
 
-Power supply, wires, connectors
+Wires, connectors, power supply
 
-Optional: diffuser panel for lighting improvement
+<hr>
+<h2 style="margin-top: 20px;">5. Timeline</h2>
+🗓 Week 1 — System Architecture & Design Concept (Nov 10–17)
 
-5. Timeline
-Week 1 — System Architecture & Design Concept (Nov 10–17)
-
-Goal: Define structure and interaction model
+Goal: Define overall structure + interaction
 
 Finalize physical layout (camera, screen, mic, LED)
 
-Create early enclosure sketches
+Early enclosure sketches
 
-Build UI information architecture (Capture / Inventory / Recipes)
+UI information architecture
 
-Test camera capture + ONNX baseline
+Test ONNX inference on Pi
 
-Implement simple voice queries
+Basic voice queries
 
-Set up SQLite database schema
+Set up SQLite schema
 
-Deliverables: sketches, wireframes, system diagram, basic recognition demo
-
-Week 2 — 3D Modeling & Functional Integration (Nov 17–24)
+🗓 Week 2 — 3D Modeling & Functional Integration (Nov 17–24)
 
 Goal: Build enclosure V1 + connect core functionality
 
 Complete CAD model
 
-3D-print enclosure V1 and assemble hardware
+3D-print enclosure V1
 
-Implement touchscreen UI for recognition → quantity confirmation
+Implement touchscreen UI
 
-Train lightweight recognition model (10 categories)
+Train lightweight recognition model
 
-Connect recognition → SQLite → Inventory view
+Connect recognition → logging → inventory UI
 
-Deliverables: enclosure V1, working UI, vision → logging pipeline
+🗓 Week 3 — AI Recipe Integration & Refinement (Nov 24–Dec 1)
 
-Week 3 — AI Recipe Integration & Refinement (Nov 24–Dec 1)
+Goal: Add intelligence + improve design
 
-Goal: Add intelligence and polish design
+Refine enclosure V2
 
-Refine enclosure V2 (LED integration, rounding, stability)
+Recipe suggestion UI page
 
-Add recipe suggestion UI page
+AI meal generation (OpenAI / Claude / Gemini)
 
-Connect AI API for meal generation
+Voice queries for recipes + expiring foods
 
-Add voice commands for meal queries
+LED feedback states
 
-Implement LED state logic
+🗓 Week 4 — Integration, Testing & Demo (Dec 1–Dec 7)
 
-Deliverables: enclosure V2, AI recipe feature, voice query system
-Functional Check-Off: Dec 1
+Goal: Deliver polished interactive prototype
 
-Week 4 — Integration, Testing & Demo (Dec 1–7)
+Stress-test entire pipeline
 
-Goal: Deliver stable interactive prototype
+Apply finishing (sanding, paint, logo)
 
-Stress-test recognition, UI, and voice
-
-Apply surface finishing (paint, logo)
-
-Optimize UI animations + feedback states
+UI animation + feedback optimization
 
 Record full demo video
 
-Prepare final documentation + presentation slides
+Prepare documentation + final slides
 
-Deliverables: final prototype, demo video, presentation (Dec 8)
+<hr>
+<h2 style="margin-top: 20px;">6. Fall-Back Plan</h2>
 
-6. Fall-Back Plan
+If recognition fails → manual category selection on touchscreen
 
-To ensure successful completion under any constraints:
+If voice fails → use on-screen recipe button
 
-If recognition fails:
+If API fails → local rule-based recipes
 
-Use touchscreen for manual category selection.
+If enclosure fails → laser-cut or cardboard version
 
-If voice recognition becomes unreliable:
+<hr>
+<h2 style="margin-top: 20px;">7. Group Work Distribution</h2>
+👤 Member A — Hardware & Algorithms
 
-Use on-screen button to request recipes.
+Camera pipeline
 
-If AI API limits occur:
+LED control
 
-Replace with simple local rule-based meal generator.
-
-If enclosure printing fails:
-
-Use laser-cut acrylic or cardboard housing.
-
-7. Group Work Distribution
-Member A — Hardware & Algorithms
-
-Camera pipeline, LED control
-
-Vision model training + deployment
+ONNX model training and deployment
 
 Voice query integration
 
-Database + backend logic
+Backend + AI API
 
-AI API integration
-
-Member B — UI & Industrial Design
+👤 Member B — UI & Industrial Design
 
 Exterior sketches → CAD → printing
 
-Touchscreen UI design
+UI design + touchscreen logic
 
 Assembly + finishing
 
-Demo video production
+Demo video + documentation
 
-Documentation & presentation
+<hr>
+<h2 style="margin-top: 20px;">8. Documentation Plan</h2>
 
-8. Documentation Plan
+Sketches & design iterations
 
-We will produce a complete archive including:
+CAD & 3D printing files
 
-All sketches and design iterations
+UI assets + layouts
 
-CAD files and enclosure versions
+Full code repository
 
-UI assets and screen flows
-
-Code repository (vision pipeline, UI, LED logic, AI interface)
-
-Wiring diagrams
-
-Build instructions
+Wiring & build guide
 
 Demo video
 
-Reflection write-up
-
-Group contribution statement
-
-Documentation will be organized so a new person could recreate the project from scratch, matching course expectations.
+Reflection & process write-up
