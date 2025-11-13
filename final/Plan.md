@@ -1,3 +1,12 @@
+FridgeMind – Final Project Plan
+<div align="left">
+
+Team Members: Xiaocheng Li(XL2222); Haotian Xu(hx332); Xiang Chang
+Course: Interactive Device Design
+Date: November 11, 2025
+
+</div> <hr>
+
 <h2 style="margin-top: 20px;">1. Big Idea</h2>
 <p style="line-height: 1.6;"> <strong>FridgeMind</strong> is an AI-powered fridge assistant that helps people track food, reduce waste, and make smarter meal decisions. Mounted on the refrigerator door, the device uses a <strong>camera</strong> for food recognition, a <strong>touchscreen</strong> for quantity confirmation and browsing inventory, a <strong>microphone</strong> for voice-based meal queries, and an <strong>RGB LED strip</strong> for ambient system feedback. <br><br> All recognition and inventory management run <strong>locally on Raspberry Pi</strong>, while an external AI API provides meal suggestions based on real-time inventory. </p> <hr>
 <h2 style="margin-top: 20px;">2. Interaction Summary</h2>
@@ -145,31 +154,9 @@ If API fails → local rule-based recipes
 If enclosure fails → laser-cut or cardboard version
 
 <hr>
-<h2 style="margin-top: 20px;">7. Group Work Distribution</h2>
-👤 Member A — Hardware & Algorithms
-
-Camera pipeline
-
-LED control
-
-ONNX model training and deployment
-
-Voice query integration
-
-Backend + AI API
-
-👤 Member B — UI & Industrial Design
-
-Exterior sketches → CAD → printing
-
-UI design + touchscreen logic
-
-Assembly + finishing
-
-Demo video + documentation
 
 <hr>
-<h2 style="margin-top: 20px;">8. Documentation Plan</h2>
+<h2 style="margin-top: 20px;">7. Documentation Plan</h2>
 
 Sketches & design iterations
 
