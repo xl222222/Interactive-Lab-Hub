@@ -24,9 +24,11 @@ FridgeMind is designed around a simple insight:
 Rather than asking users to manually scan items or log food through an app, FridgeMind integrates directly into the act of opening the refrigerator and placing food inside. Mounted on the refrigerator door, the device observes food placement, updates inventory automatically, and provides contextual guidance only when needed.
 
 The system combines vision-based recognition, a touchscreen interface, ambient LED feedback, and conversational AI to create a smart assistant that feels more like a part of the refrigerator than a separate device.
-<img width="1143" height="639" alt="f72eac5d07fbc035aeb2b4d4a8778629" src="https://github.com/user-attachments/assets/b6038c27-4a68-45b2-ab24-e20defa7906e" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b6038c27-4a68-45b2-ab24-e20defa7906e" width="48%" />
+  <img src="https://github.com/user-attachments/assets/63a42740-39ef-4180-99f1-3bc9cb0e43e0" width="48%" />
+</p>
 
-<img width="1144" height="640" alt="f6038b11d53050905473c838078e02dc" src="https://github.com/user-attachments/assets/63a42740-39ef-4180-99f1-3bc9cb0e43e0" />
 
 
 At the system level, FridgeMind adopts a **hybrid framework combining locally deployed models trained with Teachable Machine and AI APIs with language models**.  
@@ -72,9 +74,12 @@ Users can:
 - Read AI-generated meal suggestions
 
 The interface is intentionally minimal to reduce cognitive load and allow quick, glance-based interaction.
-<img width="1293" height="783" alt="b318d7240a0aa10f0143401028884ec5" src="https://github.com/user-attachments/assets/239f897b-0a90-4cbb-99b1-8154c3a9709b" />
-<img width="1344" height="825" alt="599b6d7c77194c5c4c97fe8f0b039510" src="https://github.com/user-attachments/assets/0cb5ac94-63f8-4172-b03b-d54dce0ecf10" />
-<img width="1415" height="840" alt="5a043a31f5a8055effb5197bd2e06d5e" src="https://github.com/user-attachments/assets/d26612f9-c5cb-4af6-94e6-af2ffcaaf7a3" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/239f897b-0a90-4cbb-99b1-8154c3a9709b" width="30%" />
+  <img src="https://github.com/user-attachments/assets/0cb5ac94-63f8-4172-b03b-d54dce0ecf10" width="30%" />
+  <img src="https://github.com/user-attachments/assets/d26612f9-c5cb-4af6-94e6-af2ffcaaf7a3" width="30%" />
+</p>
+
 
 ---
 
