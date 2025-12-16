@@ -185,7 +185,7 @@ Results showed that linking system activation to the moment when users open the 
 
 ---
 
-## Final Video
+## Final Video & Demo
 
 The final demo video presents FridgeMind through a complete real-world usage flow, including: https://youtube.com/shorts/d3GhI3BP0K0
 - Device placement on a refrigerator door
@@ -195,7 +195,8 @@ The final demo video presents FridgeMind through a complete real-world usage flo
 
 https://youtube.com/shorts/d3GhI3BP0K0
 
-Supporting images document real-world scale, internal hardware configuration, and enclosure design details.
+![9149d43b3cbd2fc510114bd323081ff0](https://github.com/user-attachments/assets/5290b0c6-fafb-4378-b6f4-6b3533e6ff4b)
+![4bca42d6caa55e7e554694b8ecaeb825](https://github.com/user-attachments/assets/93b5f447-c62d-492b-a0a4-357caa8177d1)
 
 ---
 
