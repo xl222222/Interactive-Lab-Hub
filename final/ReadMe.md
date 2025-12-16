@@ -135,9 +135,11 @@ The physical prototype was developed through iterative stages.
 ### Stage 1 – Visual Feasibility Testing
 The camera was first connected directly to a computer and tested in multiple refrigerator positions.  
 Teachable Machine was used to train early recognition models and validate performance under real lighting conditions.
-![147af2f286b9cf1e592bc3ce5d15138e](https://github.com/user-attachments/assets/077a563c-bf09-4759-b458-eeb94cd9d161)
-![bb453f0b05e67f46f206ff853c249e37](https://github.com/user-attachments/assets/1ec8c485-1564-449e-bd36-da01e34e40d6)
-![7de7f25a30a1548734d584e1f0cf448b](https://github.com/user-attachments/assets/a653bab2-e234-4dd8-8ec6-93e0bbcd2360)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/077a563c-bf09-4759-b458-eeb94cd9d161" width="30%" />
+  <img src="https://github.com/user-attachments/assets/1ec8c485-1564-449e-bd36-da01e34e40d6" width="30%" />
+  <img src="https://github.com/user-attachments/assets/a653bab2-e234-4dd8-8ec6-93e0bbcd2360" width="30%" />
+</p>
 
 ### Stage 2 – Hardware System Assembly
 After confirming visual feasibility, the Raspberry Pi, touchscreen, LED strip, speaker, and camera were integrated into a complete working system.  
@@ -180,11 +182,13 @@ Results showed that linking system activation to the moment when users open the 
 
 ## Final Video
 
-The final demo video presents FridgeMind through a complete real-world usage flow, including:
+The final demo video presents FridgeMind through a complete real-world usage flow, including: https://youtube.com/shorts/d3GhI3BP0K0
 - Device placement on a refrigerator door
 - Food recognition and inventory updates
 - Conversational AI queries and responses
 - LED-based system feedback
+
+https://youtube.com/shorts/d3GhI3BP0K0
 
 Supporting images document real-world scale, internal hardware configuration, and enclosure design details.
 
