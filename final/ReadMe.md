@@ -16,6 +16,7 @@ Interactive Device Design
 ---
 
 ## Big Idea
+<img width="861" height="1220" alt="51cb3eee2ea4be7ff0700f963a418a3c" src="https://github.com/user-attachments/assets/14f5a484-b9f9-41ea-ad6f-b061d5d4af1e" />
 
 FridgeMind is designed around a simple insight:  
 **the best moment to understand food is when people are already interacting with it.**
@@ -23,6 +24,10 @@ FridgeMind is designed around a simple insight:
 Rather than asking users to manually scan items or log food through an app, FridgeMind integrates directly into the act of opening the refrigerator and placing food inside. Mounted on the refrigerator door, the device observes food placement, updates inventory automatically, and provides contextual guidance only when needed.
 
 The system combines vision-based recognition, a touchscreen interface, ambient LED feedback, and conversational AI to create a smart assistant that feels more like a part of the refrigerator than a separate device.
+<img width="1143" height="639" alt="f72eac5d07fbc035aeb2b4d4a8778629" src="https://github.com/user-attachments/assets/b6038c27-4a68-45b2-ab24-e20defa7906e" />
+
+<img width="1144" height="640" alt="f6038b11d53050905473c838078e02dc" src="https://github.com/user-attachments/assets/63a42740-39ef-4180-99f1-3bc9cb0e43e0" />
+
 
 At the system level, FridgeMind adopts a **hybrid framework combining locally deployed models trained with Teachable Machine and AI APIs with language models**.  
 Food recognition models are trained using Teachable Machine and deployed locally on a Raspberry Pi, enabling real-time recognition and inventory logging with low latency and reliability. On top of this local perception layer, AI APIs and language models are used to reason over inventory data and generate meal suggestions. This design keeps core interactions fast and self-contained, while leveraging AI for higher-level reasoning only when appropriate.
@@ -67,6 +72,9 @@ Users can:
 - Read AI-generated meal suggestions
 
 The interface is intentionally minimal to reduce cognitive load and allow quick, glance-based interaction.
+<img width="1293" height="783" alt="b318d7240a0aa10f0143401028884ec5" src="https://github.com/user-attachments/assets/239f897b-0a90-4cbb-99b1-8154c3a9709b" />
+<img width="1344" height="825" alt="599b6d7c77194c5c4c97fe8f0b039510" src="https://github.com/user-attachments/assets/0cb5ac94-63f8-4172-b03b-d54dce0ecf10" />
+<img width="1415" height="840" alt="5a043a31f5a8055effb5197bd2e06d5e" src="https://github.com/user-attachments/assets/d26612f9-c5cb-4af6-94e6-af2ffcaaf7a3" />
 
 ---
 
@@ -87,6 +95,7 @@ This approach:
 - Avoids unnecessary system noise
 
 Scanning is not treated as a task, but as a natural consequence of everyday action.
+<img width="1371" height="840" alt="微信图片_20251201015548_120_1175" src="https://github.com/user-attachments/assets/b64f3f72-f626-4fc0-bc27-f07757556b00" />
 
 ---
 
@@ -126,16 +135,22 @@ The physical prototype was developed through iterative stages.
 ### Stage 1 – Visual Feasibility Testing
 The camera was first connected directly to a computer and tested in multiple refrigerator positions.  
 Teachable Machine was used to train early recognition models and validate performance under real lighting conditions.
+![147af2f286b9cf1e592bc3ce5d15138e](https://github.com/user-attachments/assets/077a563c-bf09-4759-b458-eeb94cd9d161)
+![bb453f0b05e67f46f206ff853c249e37](https://github.com/user-attachments/assets/1ec8c485-1564-449e-bd36-da01e34e40d6)
+![7de7f25a30a1548734d584e1f0cf448b](https://github.com/user-attachments/assets/a653bab2-e234-4dd8-8ec6-93e0bbcd2360)
 
 ### Stage 2 – Hardware System Assembly
 After confirming visual feasibility, the Raspberry Pi, touchscreen, LED strip, speaker, and camera were integrated into a complete working system.  
 The focus at this stage was functional continuity rather than visual polish.
+<img width="994" height="743" alt="23a94fc561b93ba4cbe3f63447eb311b" src="https://github.com/user-attachments/assets/8159b393-3ed8-4a1f-aadf-1363babb60d8" />
 
 ### Stage 3 – Enclosure and Form Design
 With hardware dimensions fixed, enclosure design began. The goal was to keep the device thin and unobtrusive when mounted on a refrigerator door.
 
 Because the camera required physical depth, a **ripple-inspired form language** was used to reinterpret the protrusion.  
 The camera area became a visual focal point, symbolizing the system’s primary input rather than appearing as an awkward structural necessity.
+![f766d0c51a0f83fe02691161360bcd0f](https://github.com/user-attachments/assets/95f193c4-d7ff-42db-a821-f48b1954027c)
+<img width="793" height="1255" alt="6ff5863bf6449f625cee83eab065f71b1" src="https://github.com/user-attachments/assets/e0dd67df-aaff-4a9b-8f9e-2547c80d351f" />
 
 ---
 
@@ -163,7 +178,7 @@ Results showed that linking system activation to the moment when users open the 
 
 ---
 
-## Final Video & Images
+## Final Video
 
 The final demo video presents FridgeMind through a complete real-world usage flow, including:
 - Device placement on a refrigerator door
